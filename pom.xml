@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--项目或者组织的唯一标志-->
+    <groupId>com.findbugs</groupId>
+    <!--项目的通用名称-->
+    <artifactId>lt_archetype_plus</artifactId>
+    <!--项目的版本-->
+    <version>1.0-SNAPSHOT</version>
+    <!--打包的机制-->
+    <packaging>maven-plugin</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-plugin-api</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugin-tools</groupId>
+            <artifactId>maven-plugin-annotations</artifactId>
+            <version>3.5</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <maven.compiler.source>14</maven.compiler.source>
+        <maven.compiler.target>14</maven.compiler.target>
+    </properties>
+
+</project>
