@@ -20,13 +20,18 @@ public class GupaoMojo extends AbstractMojo {
     private String msg;
     @Parameter
     private List<String> options;
+
+    @Parameter(property = "args")
+    private  String args;
 /*
-*  mvn clean install   装载
+*   mvn clean install   装载
 *   mvn help:system  查看系统参数
+*   mvn install -Dargs=123  传入 args的参数
 * */
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
         System.out.println("龙滔 骨架测试-longtao1"+msg);
         System.out.println("龙滔 骨架测试-longtao2"+options);
+        System.out.println("龙滔 骨架测试-longtao2"+args);
     }
 }
